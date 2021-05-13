@@ -1,0 +1,476 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*CSSリセット*/
+html,body,h1,h2,h3,h4,h5,ul,li,p{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+img{
+  vertical-align: bottom;
+}
+
+/*共通項目*/
+.ds_f{display: flex;}
+.js_b{justify-content: space-between;}
+.js_a{justify-content: space-around;}
+
+html { font-size: 62.5%; }
+
+body{
+  font-family: "brandon-grotesque", sans-serif;
+  font-variant: normal;
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.inner{
+	width:1000px;
+	margin:0 auto;
+}
+
+/*--header--*/
+.slidemenu_bt{
+  display: none;
+}
+
+header{
+  margin-bottom: 30px;
+}
+.header_tp{
+  background-color: #000;
+  text-align: center;
+  padding:15px;
+}
+
+.header_tp a{
+  color: #fff;
+}
+
+header nav{
+  margin: 20px 0 15px 0;
+}
+
+header ul{
+  justify-content: space-around;
+  line-height: 48px;
+}
+
+header .logo{
+  width: 360px;
+  text-align: center;
+}
+
+header li{
+  text-align: center;
+}
+
+header li a{
+  display: block;
+  height: 40px;
+  width: 100px;
+  text-decoration: none;
+  color: #333;
+}
+
+header li a:hover{
+  transition: all 0.5s 0s ease;
+  opacity: 0.5;
+}
+
+.search{
+  background-image: url(../images/marisa_j_09.jpg);
+  background-repeat: no-repeat;
+  background-position: left 63%;
+  background-size: 1.5rem auto;
+}
+
+header nav .signin{
+  background-image: url(../images/marisa_j_06.jpg);
+  background-repeat: no-repeat;
+  background-position: right 60%;
+  padding-right: 1rem;
+  background-size: 2.5rem auto;
+}
+
+header .headervisual{
+  position:relative;
+  margin-bottom: 50px;
+}
+
+header .headervisual img{
+  max-width: 100%;
+}
+
+/*--main--*/
+#mainvisual .bxslider a:hover{
+  opacity: 0.6;
+}
+
+h2{
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+h4{
+  padding-top: 70px;
+  font-weight: 500;
+}
+
+h4 a{
+  font-size: 1.7rem;
+  color: #000;
+}
+
+h4 a:hover{
+  opacity: 0.5;
+}
+/*--スライドショー（jQuery）--*/
+
+.foriphoneimg{
+  display: none;
+}
+
+#slide{
+	position:relative;
+	overflow:hidden;
+  height:450px;
+}
+
+#slide ul{
+	position:absolute;
+	width:3000px;
+}
+
+#slide li{
+	float:left;
+	width:1000px;
+	list-style-type:none;
+}
+
+#slide button{
+	opacity:.6;
+	transition:opacity .2s;
+	border:none;
+	background:none;
+}
+
+#slide button:focus{
+	outline:none;
+}
+
+#slide button:hover{
+	opacity:1;
+}
+
+#prevBtn{
+	position:absolute;
+	top:190px;
+	right:20px;
+}
+
+#nextBtn{
+	position:absolute;
+	top:190px;
+	left:20px;
+}
+
+/*--content--*/
+main .content_item h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top:25px;
+  margin-bottom: 15px;
+}
+
+main .content_item {
+  line-height: 2.2rem;
+  margin-left: 10px;
+} 
+
+main .content .btn a{
+  display: block;
+  margin: 40px 0 0 10px;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 15px 20px;
+  text-align: center;
+  width: 170px;
+  color: #000;
+  transition: all 0.3s;
+}
+
+main .content .btn a:hover{
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 2rem;
+  height: 40px;
+}
+
+main .content-img{
+  margin: 20px 0px 20px 30px;
+}
+
+/*---caption(jQuery画像キャプション表示)----*/
+#caption{
+  padding-bottom: 50px;
+}
+#caption li{
+  position: relative;
+  margin-left: 20px;
+}
+
+main #caption div{
+	position:absolute;
+	display:none;
+	width:100%;
+	height:100%;
+	padding:20px;
+	background:rgba(177,121,55,0.70);
+  color: aliceblue;
+	top:0;
+	left:0;
+	box-sizing:border-box;
+  font-size: 1.8rem;
+  letter-spacing: 0.8rem;
+}
+
+main #caption p{
+  position: relative;
+  top:10px;
+}
+
+main .snsdetail img{
+  margin:30px 20px 0 1px;
+}
+
+main .snsdetail a:hover{
+  opacity: 0.5;
+}
+
+/*-------footer--------*/
+/*--contact--*/
+footer .contact{
+  -webkit-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  background-color:#faf0e6;
+  padding: 80px 0 40px 0;
+}
+
+footer address{
+  line-height: 3.5rem;
+}
+
+footer .contact_item{
+  padding-left: 50px;
+}
+
+footer .contact_item p{
+  margin-top: 40px;
+  margin-bottom: 15px
+}
+
+footer .contact_item a{
+  color:#000;
+  transition: all 0.5s 0s ease;
+  opacity: 0.5;
+}
+
+footer .contact_item a:hover{
+  color:cadetblue;
+}
+
+.f_nav>ul{
+  display: flex;
+}
+
+.f_nav>ul>li{
+  margin: 5%;
+  line-height: 3rem;
+}
+
+.f_nav ul ul{
+  margin-left: 5px;
+}
+
+.f_nav a{
+  text-decoration: none;
+  color: #333;
+}
+
+.f_nav a:hover{
+  transition: all 0.5s 0s ease;
+  opacity: 0.5;
+}
+
+.f_nav .f_search{
+  padding-left: 20px;
+}
+
+footer .copyright{
+  background: #000;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+
+
+/*--------------------*/
+/*--画像の上に乗るボタン--*/
+/*header .main_btn{
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .main_btn a{
+  display: block;
+  padding: 15px 40px;
+  width: 80px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+}
+header .main_btn a:hover{
+  background-color: #000;
+  color: #fff;
+}*/
+
+
+@media screen and (max-width:640px) {
+  
+.inner{
+  width: auto;
+  font-size:.75rem;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+  .slidemenu_bt{
+    display: block;
+    width: 10%;
+  }
+  header ul {
+    line-height: 0px;
+  }
+header nav {
+  margin: 15px;
+  }
+  
+  header .logo {
+    width: 100%;
+    margin-top: 6px;
+    margin-right: 24px;
+  }
+  .logo img{
+    width: 40%;
+  }
+  
+  header nav li {
+    display: none;
+  }
+  
+  #slide {
+    display: none;
+  }
+  
+  .foriphoneimg{
+    display: block;
+  }
+  
+  main .ds_f{
+    flex-direction: column;
+  }
+  h2{
+    font-size: 1.8rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  h4{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-align: right;
+  }
+  
+  h4 a{
+    font-size: 1rem;
+  }
+  
+  main .content-img{
+    margin: 20px 0;
+  }
+  .snsdetail{
+    text-align: right;
+  }
+  
+  main .snsdetail img{
+    width: 10%;
+    margin: 0px 0px 10px 0px;
+  }
+  #caption li{
+    margin: 0px;
+  }
+  
+  main #caption .ds_f{
+    flex-direction: row;
+  }
+  
+  main #caption li {
+  width: 800%;
+    }
+  
+  main #caption div{
+    font-size: 0.75rem;
+    padding: 0px;
+  }
+  
+  footer .contact.ds_f{
+    flex-direction: column;
+  }
+  
+  footer .contact{
+    padding: 42px 0 0 0;
+  }
+  
+  footer .contact_item p{
+    margin-top: 20px;
+    font-size: 80%;
+  }
+  
+  footer address{
+    line-height: 2.3rem;
+    padding-bottom: 20px;
+  }
+  .f_nav>ul{
+    font-size: 80%;
+  }
+  .f_nav>ul>li {
+    margin: 3.5%;
+  }
+  
+  footer .copyright{
+    font-size: 0.5rem;
+    line-height: 1.7rem;
+    padding: 5px 10px;
+  }
+}
+
